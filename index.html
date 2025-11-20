@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Weather App</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -14,9 +14,10 @@
     <h1>WEATHER INFORMATION</h1>
 
     <div class="search-container">
-      <input type="text" id="city-input" placeholder=" Enter city name...">
+      <input type="text" id="city-input" placeholder=" Enter city name..." />
     </div>
 
+    <!-- WEATHER SECTION -->
     <div class="weather-info" id="weather-display">
       <h2 id="city"></h2>
       <h3 id="country"></h3>
@@ -30,40 +31,37 @@
 
       <div class="details-grid">
         <div class="detail-card">
-          
           <div class="detail-label">Humidity</div>
           <div class="detail-value" id="humidity"></div>
         </div>
         <div class="detail-card">
-          
           <div class="detail-label">Wind Speed</div>
           <div class="detail-value" id="wind"></div>
         </div>
         <div class="detail-card">
-          
           <div class="detail-label">Feels Like</div>
           <div class="detail-value" id="feelslike"></div>
         </div>
         <div class="detail-card">
-          
           <div class="detail-label">Local Time</div>
           <div class="detail-value" id="time"></div>
         </div>
         <div class="detail-card">
-          
           <div class="detail-label">UV Index</div>
           <div class="detail-value" id="uv"></div>
         </div>
         <div class="detail-card">
-          
           <div class="detail-label">Visibility</div>
           <div class="detail-value" id="visibility"></div>
         </div>
       </div>
-    <button id="btnlocation">View Country Details</button>
-  </div>
 
-  <p id="location" style="display: none;"></p>
+      <button id="btnlocation">View Country Details</button>
+    </div>
+
+    <!-- COUNTRY DETAILS SECTION-->
+    <div id="country-info" style="display: none;"></div>
+
   </div>
 
   <script src="app.js"></script>
