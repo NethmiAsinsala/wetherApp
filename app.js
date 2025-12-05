@@ -85,27 +85,39 @@ btn.addEventListener("click", () => {
       <h1 style="font-size: 32px; margin-bottom: 10px; color:#5ea0ff;">
         ${d.name.common}
       </h1>
-      <h2 style="margin-top:20px;">Flag</h2>
-      <img src="${d.flags.png}" width="220" 
+      
+      <img src="${d.flags.png}" width="550" 
            style="margin-top:10px; border-radius:10px; filter: drop-shadow(0 4px 15px rgba(255, 255, 255, 0.2));
-  animation: bounce 3s infinite ease-in-out;">
-
-      <p><strong>Capital:</strong> ${d.capital ? d.capital[0] : "N/A"}</p>
-      <p><strong>Population:</strong> ${d.population.toLocaleString()}</p>
-      <p><strong>Region:</strong> ${d.region}</p>
-      <p><strong>Subregion:</strong> ${d.subregion || "N/A"}</p>
-      <p><strong>Languages:</strong> ${d.languages ? Object.values(d.languages).join(", ") : "N/A"
-    }</p>
-      <p><strong>Currencies:</strong> ${d.currencies
+  animation: bounce 3s infinite ease-in-out; align-self: center;"/>
+     
+      <div class="detail-cardC">
+        <p><strong>CAPITAL:</strong> ${d.capital ? d.capital[0] : "N/A"}</p>
+      </div>
+      <div class="detail-cardC">
+        <p><strong>POPULATION:</strong> ${d.population.toLocaleString()}</p>
+      </div>
+      <div class="detail-cardC">
+        <p><strong>REGION:</strong> ${d.region}</p>
+      </div>
+      <div class="detail-cardC">
+        <p><strong>SUBREGION:</strong> ${d.subregion || "N/A"}</p>
+      </div>
+      <div class="detail-cardC">
+        <p><strong>LANGUAGES:</strong> ${d.languages ? Object.values(d.languages).join(", ") : "N/A"}</p>
+      </div>
+      <div class="detail-cardC">
+        <p><strong>CURRENCIES:</strong> ${d.currencies
       ? Object.values(d.currencies)
         .map((c) => c.name)
         .join(", ")
       : "N/A"
-    }</p>
+      }</p>
+    </div>
+      
 
       
 
-      <h2 style="margin-top:25px;">Map</h2>
+      <h2 style="margin-top:25px; text-align: center; color: white;">Map</h2>
       <iframe
         width="100%"
         height="350"
