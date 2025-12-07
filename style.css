@@ -7,12 +7,12 @@
 }
 
 body {
-  background: linear-gradient(135deg, #1e2633, #0f1620);
+  background: rgb(140, 207, 228);
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: #000000;
   padding: 20px;
   position: relative;
   overflow-x: hidden;
@@ -32,7 +32,7 @@ body::after {
 body::before {
   width: 400px;
   height: 400px;
-  background: white;
+  background: rgb(0, 0, 0);
   top: -100px;
   left: -100px;
   animation-delay: 0s;
@@ -41,7 +41,7 @@ body::before {
 body::after {
   width: 300px;
   height: 300px;
-  background: white;
+  background: rgb(2, 0, 0);
   bottom: -80px;
   right: -80px;
   animation-delay: 5s;
@@ -85,7 +85,7 @@ h1 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: 700;
-  background: linear-gradient(135deg, #fff 0%, #a8b3c1 100%);
+  background: linear-gradient(135deg, #000000 0%, #424446 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -104,20 +104,20 @@ h1 {
   border: 2px solid rgba(255, 255, 255, 0.1);
   outline: none;
   background: rgba(255, 255, 255, 0.09);
-  color: #fff;
+  color: #000000;
   font-size: 16px;
   transition: all 0.3s ease;
 }
 
 #city-input:focus {
-  border-color: #3478f6;
+  border-color: #148088;
   background: rgba(255, 255, 255, 0.12);
   box-shadow: 0 0 20px rgba(52, 120, 246, 0.3);
   transform: translateY(-2px);
 }
 
 #city-input::placeholder {
-  color: #cfcfcf;
+  color: #686868;
 }
 
 .weather-info {
@@ -185,7 +185,7 @@ h3 {
   font-weight: 700;
   display: block;
   margin-bottom: 10px;
-  background: linear-gradient(135deg, #3478f6, #5590ff);
+  background: black;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -209,11 +209,11 @@ h3 {
 }
 
 .detail-card {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(126, 200, 250, 0.08);
   backdrop-filter: blur(10px);
   padding: 20px 15px;
   border-radius: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgb(82, 92, 95);
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -224,7 +224,7 @@ h3 {
   backdrop-filter: blur(10px);
   padding: 20px 15px;
   border-radius: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(24, 20, 20, 0.1);
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -245,8 +245,8 @@ h3 {
 
 .detail-card:hover {
   transform: translateY(-5px);
-  border-color: rgba(52, 120, 246, 0.5);
-  box-shadow: 0 10px 30px rgba(52, 120, 246, 0.2);
+  border-color: rgba(10, 10, 10, 0.5);
+  box-shadow: 0 10px 30px rgba(5, 26, 65, 0.2);
 }
 
 .detail-card:hover::before {
@@ -274,7 +274,7 @@ h3 {
 .detail-value {
   font-size: 22px;
   font-weight: 700;
-  color: #3478f6;
+  color: #01040a;
   position: relative;
   z-index: 1;
   word-break: break-word;
@@ -284,24 +284,25 @@ h3 {
 #btnlocation {
   width: 100%;
   padding: 16px 20px;
-  background: linear-gradient(135deg, #3478f6, #5590ff);
+  background: linear-gradient(135deg, #148088, #229bb9);
   border: none;
   border-radius: 15px;
   font-size: 16px;
   font-weight: 600;
-  color: #fff;
+  color: #050000;
   cursor: pointer;
   transition: all 0.3s ease;
   text-transform: uppercase;
   letter-spacing: 1px;
-  box-shadow: 0 8px 20px rgba(52, 120, 246, 0.3);
+  box-shadow: 0 8px 20px rgba(1, 5, 14, 0.3);
   margin-top: 10px;
 }
 
 #btnlocation:hover {
   transform: translateY(-3px);
   box-shadow: 0 12px 30px rgba(52, 120, 246, 0.4);
-  background: linear-gradient(135deg, #5590ff, #3478f6);
+  background: linear-gradient(135deg, #01050e, #2e2f31);
+  color: white;
 }
 
 #btnlocation:active {

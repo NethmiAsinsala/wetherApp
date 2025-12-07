@@ -79,7 +79,7 @@ btn.addEventListener("click", () => {
       backdrop-filter: blur(25px);
       padding: 30px;
       border-radius: 20px;
-      color: #fff;
+      color: black;
       animation: fadeIn .3s ease;
     ">
       <h1 style="font-size: 32px; margin-bottom: 10px; color:#5ea0ff;">
@@ -117,7 +117,7 @@ btn.addEventListener("click", () => {
 
       
 
-      <h2 style="margin-top:25px; text-align: center; color: white;">Map</h2>
+      <h2 style="margin-top:25px; text-align: center; color: black;">Map</h2>
       <iframe
         width="100%"
         height="350"
@@ -130,10 +130,10 @@ btn.addEventListener("click", () => {
       <button id="backBtn" style="
         margin-top:20px;
         padding:12px 20px;
-        background:#5ea0ff;
+        background:#148088;
         border:none;
         border-radius:10px;
-        color:#fff;
+        color:black;
         font-size:16px;
         cursor:pointer;
       ">Back to Weather</button>
