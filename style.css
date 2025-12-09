@@ -401,3 +401,39 @@ h3 {
     font-size: 15px;
   }
 }
+
+@media (max-width: 380px) {
+  .card {
+    padding: 20px;
+  }
+
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #icon img {
+    width: 90px;
+  }
+
+  .temp-condition {
+    font-size: 1.2rem;
+  }
+}
+
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .card {
+    max-width: 600px;
+  }
+
+  .details-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+@media (min-width: 1000px) {
+  .card {
+    max-width: 650px;
+  }
+}
